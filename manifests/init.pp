@@ -1,5 +1,5 @@
 class { 'elasticsearch':
-  version => '1.4.2',
+  version => '1.4.4',
   manage_repo  => true,
   repo_version => '1.4',
   status => 'enabled',
