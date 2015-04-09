@@ -1,0 +1,19 @@
+{
+  "CHANGELOG.md": "6f331f188a060e06c8e3038820687990",
+  "Gemfile": "dbc1a15e3a264c03878028240cfc5d89",
+  "LICENSE": "136e4f49dbf29942c572a3a8f6e88a77",
+  "README.md": "cd406b6f90cf77f21fc09885795e3e82",
+  "Rakefile": "20b80e526e351a74df2001f504e756d2",
+  "manifests/config.pp": "c05ddbd3451bc5e68f436da3c5f18d62",
+  "manifests/init.pp": "c4dda408ab628e8f4e7b301e391b90f1",
+  "manifests/install.pp": "c83ff247f0bb6f2c15a080da2631a6fb",
+  "manifests/params.pp": "14553c94a0d699da2754a605390de05d",
+  "manifests/service.pp": "4df3bc927f15821d3410d6c8d3503c3c",
+  "manifests/user.pp": "260f4a8c037421cc54b13f31ec0304c9",
+  "metadata.json": "6a51d3e38b862c19c4f514d0d74300a3",
+  "spec/classes/init_spec.rb": "634cfd4182d00aac9dc66fafa0f473b1",
+  "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+  "templates/kibana.init": "1dbda2d0acb75c71ca71987af6b4c5ad",
+  "templates/kibana.yml.erb": "a2881b9e2f4778318d575135ead5b32d",
+  "tests/init.pp": "b314cac3aa8bfaefc1a3420216828586"
+}
