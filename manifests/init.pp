@@ -4,8 +4,6 @@ class { 'elasticsearch':
   repo_version => '1.4',
   status => 'enabled',
   java_install => true
-
-
 }
 elasticsearch::instance { 'logstash': }
 class { 'logstash': 
@@ -21,7 +19,7 @@ logstash::configfile { 'syslog':
   order  => 20
 }
 
-class { '::kibana4':
+class { 'kibana4':
   package_ensure    => '4.0.0-linux-x64',
   package_provider  => 'archive',
   symlink           => false,
@@ -33,6 +31,8 @@ class { '::kibana4':
   elasticsearch_url => 'http://localhost:9200',
 }
 class { "nginx":
-source_dir       => "puppet:///modules/nginx",
-source_dir_purge => false,
+  source_dir       => "puppet:///modules/nginx",
+  source_dir_purge => false,
+  require => Class['kibana4']
+  
 }
