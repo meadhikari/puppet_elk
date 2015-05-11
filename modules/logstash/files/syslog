@@ -25,6 +25,13 @@ filter {
     	pattern => "%{COMBINEDAPACHELOG}"
   	}
   }
+  if [type] == "hybris"
+  {
+    grok {
+    	type => "hybris"
+    	pattern => "\A%{CISCO_REASON}\| %{JAVAFILE}\| main    \| %{YEAR}/%{MONTHNUM}/%{MONTHDAY} %{TIME} \| %{GREEDYDATA}"
+  	}
+  }
 }
 output {
   elasticsearch { host => localhost }
